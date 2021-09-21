@@ -1,0 +1,45 @@
+.header {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  flex-direction: row;
+  padding: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(#eddcd2, 0.5) 0%,
+    rgba(#fff1e6, 0.5) 30%,
+    rgba(#f0efeb, 0.5) 60%
+  );
+  &__logo {
+    &__img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  &__menu-mobile {
+    display: none;
+  }
+
+  &__menu {
+    &__ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      text-transform: uppercase;
+      list-style: none;
+      &__li {
+        &__a {
+          padding: 0.5rem;
+          font-size: $font-3;
+
+          &:hover {
+            border-bottom: 0.3rem solid $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

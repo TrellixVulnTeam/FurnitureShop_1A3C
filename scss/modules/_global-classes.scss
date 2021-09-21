@@ -1,0 +1,9 @@
+@import 'variables';
+
+.current-menu-item {
+  border-bottom: 0.3rem solid $color-primary;
+}
+
+.displayOn {
+  display: flex !important;
+}

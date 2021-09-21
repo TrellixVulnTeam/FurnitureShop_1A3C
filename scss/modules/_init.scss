@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // color: $color-black;
+  font-family: 'Lato', sans-serif;
+  cursor: default;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: $color-light;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  cursor: pointer;
+}

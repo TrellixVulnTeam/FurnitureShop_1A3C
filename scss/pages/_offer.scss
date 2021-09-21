@@ -1,0 +1,129 @@
+.oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+  background: $color-white;
+
+  &__header {
+    text-align: center;
+    margin: 1rem;
+
+    &__h2 {
+      font-size: $font-1;
+      text-transform: uppercase;
+    }
+
+    &__h3 {
+      font-size: $font-2;
+    }
+  }
+
+  &__up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+
+    &__module {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      height: 30vh;
+
+      &__p {
+        padding: 1rem 3rem;
+        font-size: $font-3;
+      }
+
+      &__btn {
+        display: block;
+        padding: 2rem 4rem;
+        border-radius: 30rem;
+        background: $color-primary;
+        color: $color-white;
+        font-size: $font-3;
+        text-align: center;
+
+        &:hover {
+          background: $color-secondary;
+        }
+      }
+    }
+  }
+
+  &__produkty {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      width: 40rem;
+      margin: 2rem 1rem;
+
+      &__pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        &__img {
+          max-width: 100%;
+          max-height: 100%;
+
+          &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 2rem;
+
+        &__up {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &__h3 {
+            font-size: $font-3;
+            text-align: center;
+          }
+
+          &__cena {
+            font-size: $font-4;
+            margin: 0.5rem;
+          }
+        }
+
+        &__btn {
+          margin-top: 1rem;
+          font-size: $font-4;
+
+          &__a {
+            display: block;
+            padding: 1.5rem;
+            border-radius: 30rem;
+            background: $color-primary;
+            color: $color-white;
+
+            &:hover {
+              background: $color-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

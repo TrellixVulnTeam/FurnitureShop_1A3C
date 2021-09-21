@@ -1,0 +1,274 @@
+// Smaller screens
+@media all and (max-width: 700px) {
+  // Header
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 0;
+
+    &__menu {
+      display: none;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      &__img {
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+
+    &__menu-mobile {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 12vh;
+
+      &__btn {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        text-align: center;
+
+        &__txt {
+          font-size: 3rem;
+        }
+
+        &__i {
+          font-size: 8rem !important;
+        }
+      }
+
+      &__ul {
+        position: absolute;
+        top: 12vh;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background: rgba($color-dark, 0.8);
+        color: $color-light;
+        text-transform: uppercase;
+        list-style: none;
+        &__li {
+          margin-bottom: 3rem;
+          &__a {
+            padding: 0.5rem;
+            font-size: $font-1;
+          }
+        }
+      }
+    }
+  }
+
+  // Front-page
+  .front-page {
+    &__down {
+      &__gallery {
+        &__items {
+          grid-template-columns: 1fr;
+          &__item {
+            width: 90vw;
+            height: 25vh;
+          }
+        }
+      }
+
+      &__blog {
+        &__h2 {
+          text-align: center;
+        }
+
+        &__blocks {
+          flex-direction: column;
+
+          &__module {
+            grid-template-columns: 4fr 6fr;
+            &__txt__btn {
+              width: 60%;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      &__end {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+
+  // Oferta
+  .oferta {
+    &__up {
+      flex-direction: column;
+      &__module {
+        height: unset;
+        width: 90%;
+        margin-bottom: 3rem;
+
+        &__p {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  // Blog
+  .blog {
+    padding: 1rem;
+    &__posts {
+      &__module {
+        grid-template-columns: 4fr 6fr;
+        margin: 2rem 1rem;
+
+        &__txt {
+          &__btn {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    &__main {
+      justify-content: center;
+      margin: 1rem;
+
+      &__txt {
+        width: 90%;
+        &__p {
+          font-size: $font-2;
+          margin: 1rem 0;
+        }
+      }
+
+      &__pic {
+        width: 100%;
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  .contact {
+    &__form {
+      width: 80%;
+      margin: 5rem 0;
+    }
+
+    &__map {
+      margin-top: 0rem;
+
+      height: 50vh;
+    }
+  }
+
+  // Single produkt
+  .produkt {
+    flex-direction: column-reverse;
+
+    &__left {
+      flex-direction: column;
+      align-items: center;
+
+      &__pic {
+        width: 90vw;
+        height: 40vh;
+      }
+
+      &__small {
+        width: 90vw;
+        padding-top: 5rem;
+        &__img {
+          width: 20%;
+          height: 10vh;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__right {
+      padding: 5rem 0;
+    }
+  }
+}
+
+// ### Resolutions:
+
+// #### TV / Screen / Laptop:
+
+//      1.  7680x4320
+@media all and (min-width: 6000px) {
+  html {
+    font-size: 50px;
+  }
+}
+//      2.  3840x2160
+@media all and (max-width: 5999px) and (min-width: 2800px) {
+  html {
+    font-size: 30px;
+  }
+}
+//      3.  2560x1440
+@media all and (max-width: 2799px) and (min-width: 1950px) {
+  html {
+    font-size: 18px;
+  }
+}
+//      4.  1920x1080 -- native
+//      5.  1600x900
+//      6.  1536x864
+//      7.  1440x900
+//      8.  1366x768
+//      9.  1280x1024
+//      10. 1280x800
+//      11. 1280xx720
+// __________________________ till here its fine
+
+//      12. 768x1024
+// #### Tablets:
+//      1.  1366x1024  &   1024x1366
+//      2.  1280x800   &   800x1280
+//      3.  1112x834   &   834x1112
+//      4.  1080x810   &   810x1080
+//      5.  1024x768   &   768x1024
+//      6.  1024x600   &   600x1024
+//      7.  962x601    &   601x962
+
+@media all and (max-width: 1200px) and (min-width: 900px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+// #### Phones:
+
+//      1.  414x896    &    896x414
+//      2.  414x736    &    736x414
+//      3.  412x915    &    915x412
+//      4.  412x892    &    892x412
+//      5.  412x869    &    869x412
+//      6.  412x846    &    846x412
+//      7.  393x851    &    851x393
+//      8.  375x812    &    812x375
+//      9.  375x667    &    667x375
+//      10. 360x800    &    800x360
+//      11. 360x780    &    780x360
+//      12. 360x760    &    760x360
+//      13. 360x720    &    720x360
+//      14. 360x640    &    640x360
+//      15. 320x568    &    568x320
+
+@media all and (max-width: 899px) {
+  html {
+    font-size: 6px;
+  }
+}
