@@ -2,10 +2,9 @@ Preview: resin-zone.com
 
 Project status: Finished
 
----
-
 It's necessery to add wp-content/mu-plugins/resin-post.types.php :
 
+```
 <?php
     function resin_post_types(){
 
@@ -26,5 +25,4 @@ It's necessery to add wp-content/mu-plugins/resin-post.types.php :
     add_action('init', 'resin_post_types');
 
 ?>
-
----
+```
